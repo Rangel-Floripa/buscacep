@@ -37,13 +37,16 @@ function App() {
         <h1>Busca cep com React</h1>
 
         <input placeholder='Digite o cep' onChange={manipularEndereco} />
-        <ul>
+        <div className='item'>
+        <ul >
           <li>CEP:  {endereco.cep}</li>
           <li>Rua:  {endereco.logradouro}</li>
           <li>Bairro: {endereco.bairro}</li>
           <li>Cidade: {endereco.localidade}</li>
           <li>Estado: {endereco.uf}</li>
         </ul>
+       </div>
+
       </header>
     </div>
   );
